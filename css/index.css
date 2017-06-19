@@ -1,0 +1,425 @@
+
+
+
+
+
+.header{
+    background-color: #f7f7f7;
+    position: relative;
+}
+.header-wrap{
+    height: 80px;
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+.header-logo{
+    width: 150px;
+    height:38px;
+    font-size: 20px;
+    line-height: 38px;
+    color: #07111b;
+    text-indent: 50px;
+    background: url("../img/logo.png") left center no-repeat;
+    background-size: 38px 38px;
+    position: absolute;
+    top:50%;
+    margin-top: -19px;
+    left: 20px;
+}
+.header-nav{
+    position: absolute;
+    right:20px;
+    height: 38px;
+    top:50%;
+    margin-top: -19px;
+}
+.header-nav-item{
+    color: #292f35;
+    font-size: 14px;
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    float: left;
+    margin-left: 40px;
+    position: relative;
+}
+.header-nav-item:hover{
+    color: #f01400;
+}
+.header-nav-item-active{
+    color: #f01400;
+}
+.header-nav-item-active:after{
+    content: "  ";
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f01400;
+}
+.header-nav-item-custom-btn{
+    background-color: #000;
+    color: #f4f4f5;
+    line-height: 38px;
+    text-align: center;
+    width: 90px;
+    border-radius: 3px;
+}
+/*第一屏*/
+.screen-1{
+    height: 800px;
+    /*background-color: #e7e7e7;*/
+    background-color: red;
+    position: relative;
+    background: url("../img/bg-screen-1.png") no-repeat center;
+    background-size: cover;
+}
+.screen-1-heading{
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 46px;
+    color: #4d555d;
+    text-align: center;
+    padding-top: 152px;
+
+}
+.screen-1-heading b{
+    color: #f01400;
+    font-weight: normal;
+}
+.screen-1-phone{
+    width: 1375px;
+    height: 305px;
+    background: url("../img/screen-1-phone.png") no-repeat center;
+    position: absolute;
+    left:50%;
+    margin-left: -687px;
+    bottom:180px;
+    z-index: 2;
+}
+.screen-1-shadow{
+    width: 1233px;
+    height: 411px;
+    background: url("../img/screen-1-shadow.png") no-repeat center;
+    position: absolute;
+    left:50%;
+    margin-left: -687px;
+    z-index: 1;
+    opacity: .8;
+    bottom: 30px;
+}
+/*第二屏*/
+.screen-2{
+    background-color: #fafafa;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+.screen-2-heading{
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 46px;
+    color: #f01400;
+    text-align: center;
+    padding-top: 96px;
+    line-height: 46px;
+}
+.screen-2-subheading{
+    font-weight: normal;
+    margin:0;
+    padding: 0;
+    font-size: 14px;
+    color: #2c31137;
+    text-align: center;
+    padding-top: 25px;
+    line-height: 28px;
+}
+.screen-2-phone{
+    width: 928px;
+    height: 873px;
+    background: url("../img/screen-2-phone.png") no-repeat center;
+    position: absolute;
+    left:50%;
+    margin-left: -464px;
+    bottom:-345px;
+    z-index: 2;
+
+}
+.screen-2-point{
+    width: 108px;
+    height: 22px;
+    padding-right: 112px;
+    font-size: 22px;
+    line-height: 22px;
+    color: #4d555d;
+    position: absolute;
+    background: url("../img/icon-point-right.png") no-repeat center right;
+}
+.screen-2-point-custom-right{
+    padding: 0 0 0 112px;
+    background: url("../img/icon-point-left.png") no-repeat center left;
+    position: absolute;
+    width: 108px;
+    height: 22px;
+    padding-left: 112px;
+    font-size: 22px;
+    line-height: 22px;
+    color: #4d555d;
+}
+.screen-2-point-i-1{
+    top: 150px;
+    left:-164px;
+}
+.screen-2-point-i-2{
+    top: 30px;
+    right: 130px;
+}
+.screen-2-point-i-3{
+    top: 330px;
+    right: 30px;
+}
+/*第三屏*/
+.screen-3{
+    background-color: red;
+    height: 800px;
+    position: relative;
+    background: url("../img/bg-screen-3.png") no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+.screen-3-wrap{
+    width:1200px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+.screen-3-heading{
+    font-size: 46px;
+    line-height: 46px;
+    color: #fff;
+    text-align: left;
+    padding-top: 94px;
+}
+.screen-3-subheading{
+    font-size: 14px;
+    color: #fff;
+    text-align: left;
+    padding-top: 25px;
+    line-height: 28px;
+}
+.screen-3-phone{
+    width: 750px;
+    height: 873px;
+    background: url("../img/screen-3-phone.png") no-repeat center top;
+    position: absolute;
+    right: 0;
+    top: 195px;
+    z-index: 2;
+}
+.screen-3-features{
+    position: absolute;
+    top:395px;
+    left: 0;
+    width: 320px;
+    height:280px;
+}
+.screen-3-features-item{
+    width: 138px;
+    height: 118px;
+    border:1px solid #cb7173;
+    margin:0 20px 20px 0;
+    float: left;
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+}
+.screen-3-features-item-number{
+    height:36px;
+    font-size: 36px;
+    line-height: 36px;
+    padding: 28px 0 7px;
+
+}
+.screen-3-features-item-desc{
+    height: 14px;
+    font-size: 14px;
+    line-height: 14px;
+}
+/*第四屏*/
+.screen-4{
+    background-color: #fff;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+.screen-4-wrap{
+    width:1200px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+.screen-4-heading{
+    font-size: 46px;
+    line-height: 46px;
+    color: #f01400;
+    text-align: center;
+    padding-top: 135px;
+}
+.screen-4-subheading{
+    font-size: 14px;
+    color: #464a4f;
+    text-align: center;
+    padding-top: 29px;
+    line-height: 28px;
+}
+.screen-4-type{
+    width: 1260px;
+    height: 270px;
+    position: absolute;
+    top:304px;
+    margin-left: 30px;
+}
+.screen-4-type-item{
+    width: 220px;
+    margin-right: 90px;
+    height: 270px;
+    float: left;
+    position: relative;
+    text-align: center;
+    background-size: cover;
+}
+.screen-4-type-item-color{
+    width: 100%;
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+    color: #2c3238;
+    position: absolute;
+    bottom: -44px;
+}
+.screen-4-type-item-storage{
+    width: 100%;
+    height: 12px;
+    line-height: 12px;
+    font-size: 12px;
+    color: #a4a9a1;
+    position: absolute;
+    bottom: -66px;
+}
+.screen-4-type-item-i-1{
+    background: url("../img/phone-1.png") no-repeat left top;
+}
+.screen-4-type-item-i-2{
+    background: url("../img/phone-2.png") no-repeat left top;
+}
+.screen-4-type-item-i-3{
+    background: url("../img/phone-3.png") no-repeat left top;
+}
+.screen-4-type-item-i-4{
+    background: url("../img/phone-4.png") no-repeat left top;
+}
+/*第五屏*/
+.screen-5{
+    /*background-color: #d9dde1;*/
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+    background-color: #d9dde1;
+}
+.screen-5-heading{
+    font-size: 46px;
+    line-height: 46px;
+    color: #f01400;
+    text-align: center;
+    padding-top: 130px;
+}
+.screen-5-bg{
+    width: 1920px;
+    height: 433px;
+    background: url("../img/bg-screen-5.png") no-repeat center bottom;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+    bottom: 0;
+}
+.screen-5-subheading{
+    font-size: 14px;
+    color: #464a4f;
+    text-align: center;
+    padding-top: 25px;
+    line-height: 28px;
+}
+/*立即购买*/
+.screen-buy{
+    background: #2b333b url('../img/bg-screen-buy.png') center;
+    height: 80px;
+    padding: 80px 0 80px 0;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.screen-buy-button{
+    height: 80px;
+    width: 240px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #f01414;
+    display: inline-block;
+    transition: all .5s;
+}
+.screen-buy-button:hover{
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+}
+.footer{
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background-color: #07111b;
+}
+.outline{
+    position: fixed;
+    padding: 5px 10px;
+    bottom:120px;
+    right: 0;
+    z-index: 3;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,.5);
+}
+.outline-item{
+    display: block;
+    width: 40px;
+    height: 30px;
+    line-height: 30px;
+    padding: 5px 0;
+    background-color: #ffffff;
+    margin-top: 5px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    color: #939992;
+}
+.outline-item:first-of-type{
+    border:none;
+}
+.outline-item-status-active{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
