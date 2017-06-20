@@ -97,11 +97,25 @@ var playScreenAnimateDone = function (screenCls) {
 }
 window.onload = function () {
     for(k in screenAnimateElements){
+        if(k === '.screen-1'){
+            continue;
+        }
         setScreenAnimateInit(k)
     }
 }
 
 //第二步: 滚动到哪里,播放到哪里
+var navItems = getAllElem('.header-nav-item');
+var outlineItems = getAllElem('.outline-item');
+
+var switchNavItemsActive = function (idx) {
+    for(var i=0;i<navItems.length;i++){
+        delCls(navItems[i],'header-nav-item-active')
+    }
+    addCls(navItems[idx],'header-nav-item-active')
+
+}
+
 window.onscroll = function () {
     var top = document.body.scrollTop;
     // console.log(top);
@@ -112,25 +126,85 @@ window.onscroll = function () {
     }else{
         delCls(getElem('.header'),'header-status-black');
         delCls(getElem('.outline'),'outline-status-in');
-
+        switchNavItemsActive(0)
     }
 
 
-
-
-    if (top > 1){
+    if (top >= 0){
         playScreenAnimateDone('.screen-1')
+        switchNavItemsActive(0)
     }
-    if (top > 800*1){
+    if (top > 800*1 -100){
         playScreenAnimateDone('.screen-2')
+        switchNavItemsActive(1)
     }
-    if (top > 800*2){
+    if (top > 800*2 -100){
         playScreenAnimateDone('.screen-3')
+        switchNavItemsActive(2)
     }
-    if (top > 800*3){
+    if (top > 800*3 -100){
         playScreenAnimateDone('.screen-4')
+        switchNavItemsActive(3)
     }
-    if (top > 800*4){
+    if (top > 800*4 -100){
         playScreenAnimateDone('.screen-5')
+        switchNavItemsActive(4)
     }
 }
+// 第三步双向定位
+
+var setNavJump = function(i,lib){
+    var item = lib[i];
+    item.onclick= function(){
+        document.body.scrollTop = i*800;
+    }
+}
+for(var i=0;i<navItems.length;i++){
+    setNavJump(i,navItems);
+}
+for(var i=0;i<outlineItems.length;i++){
+    setNavJump(i,outlineItems);
+}
+// 第四步 滑动门特效
+
+var navTip = getElem('.header-nav-tip');
+var setTip = function(idx,lib){
+    console.log(1)
+    lib[idx].onmouseover = function () {
+        // console.log(this,idx);
+        navTip.style.left = (idx*70) + 'px';
+    }
+    var activeIdx = 0;
+    lib[idx].onmouseout = function () {
+        // console.log(this,idx);
+        for(var i=0;i<lib.length;i++){
+            console.log(1)
+            if(getCls(lib[i]).indexOf('header-nav-item-active') > -1){
+                console.log('?')
+                activeIdx = i;
+                break;
+            }
+        }
+        navTip.style.left = (activeIdx*70) + 'px';
+
+    }
+
+}
+for(var i=0;i<navItems.length;i++){
+    setTip(i,navItems);
+}
+
+// 小优化
+
+setTimeout(function () {
+    playScreenAnimateDone('.screen-1');
+},500)
+
+
+
+
+
+
+
+
+

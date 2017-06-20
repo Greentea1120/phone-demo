@@ -218,6 +218,9 @@
 .header-status-black .header-nav-item{
     color: #fff;
 }
+.header-status-black .header-nav-item-active{
+    color: red;
+}
 .header-status-black{
     background-color: rgba(0,0,0,.5);
     position: fixed;

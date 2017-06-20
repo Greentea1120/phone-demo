@@ -41,7 +41,9 @@
     height: 38px;
     line-height: 38px;
     float: left;
-    margin-left: 40px;
+    width: 30px;
+    text-align: center;
+    padding-left: 40px;
     position: relative;
 }
 .header-nav-item:hover{
@@ -51,13 +53,14 @@
     color: #f01400;
 }
 .header-nav-item-active:after{
-    content: "  ";
-    display: block;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #f01400;
+    /*position: absolute;*/
+    /*content: "  ";*/
+    /*display: block;*/
+    /*width: 100%;*/
+    /*height: 2px;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*background-color: #f01400;*/
 }
 .header-nav-item-custom-btn{
     background-color: #000;
@@ -66,6 +69,8 @@
     text-align: center;
     width: 90px;
     border-radius: 3px;
+    padding: 0;
+    margin-left: 40px;
 }
 /*第一屏*/
 .screen-1{
@@ -412,7 +417,17 @@
 .outline-item-status-active{
     color: red;
 }
+.header-nav-tip{
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #000000;
+    bottom: 0;
+    left:0;
+    margin-left: 40px;
+    transition: all .5s;
 
+}
 
 
 
